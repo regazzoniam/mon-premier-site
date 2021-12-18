@@ -1,0 +1,224 @@
+/* police personnalisée */
+
+@font-face {
+	font-family: 'muthiara';
+	src: url('../src/Muthiara.otf') format('opentype');
+}
+
+/* mise en forme logo */
+
+#logo {
+	margin-top: 30px;
+	width: 100px;
+}
+
+/* mise en forme header */
+
+header {
+	color: white;
+	background-color: #ffcccc;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+/* mise en forme headings */
+
+h1 {
+	font-family: muthiara, arial, sans-serif;
+	font-size: 5em;
+	opacity: 0.8;
+	margin-top: 0;
+	padding-top: 30px;
+	margin-bottom: 5px;
+}
+
+
+h2 {
+	text-align: center;
+	font-size: 1, 5em;
+	font-family: 'Dancing Script', cursive, arial, sans-serif;
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+
+h3:before {
+	content: " - ";
+	color: grey;
+}
+
+h3:after {
+	content: " - ";
+	color: grey;
+}
+
+h3 {
+	font-size: 1, 5em;
+	font-family: 'Dancing Script', cursive, arial, sans-serif;
+}
+
+p {
+	font-family: 'Dancing Script', cursive, arial, sans-serif;
+}
+
+
+
+
+
+/* mise en forme globale */
+
+.separator {
+	width: 40px;
+	height: 1px;
+	margin: 15px auto;
+	display: block;
+	background-color: #ffcccc;
+}
+
+.conteneur {
+	width: 80%;
+	margin: auto;
+}
+
+.projet {
+	width: 400px;
+	margin: 30px;
+	display: inline-block;
+	background-color: white;
+	padding-bottom: 15px;
+	border: 0px black solid;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#projets {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+/* mise en forme body */
+
+body {
+	background-color: #F4F7F6;
+	font-family: 'Dancing Script', cursive, arial, sans-serif;
+	margin: 0;
+}
+
+
+
+/* mise en forme sections */
+
+section {
+	text-align: center;
+	margin-top: 15px;
+}
+
+
+
+/* hover projet */
+
+.projet:hover {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.25);
+	transition: 0.8s;
+}
+
+
+
+/* mise en forme card */
+.projet span {
+	text-transform: uppercase;
+	display: block;
+}
+
+.projet img {
+	min-width: 400px;
+	height: 400px;
+}
+
+.picture {
+	min-width: 100%;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+#picture-project img {
+	width: 40%;
+}
+
+
+/* mise en forme navbar */
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	font-size: 1em;
+	display: inline;
+}
+
+nav {
+	text-align: center;
+	font-size: 1, 1em;
+	background: white;
+	box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+	padding: 15px;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	margin: 10px;
+}
+
+li:hover {
+	font-weight: bold;
+}
+
+
+
+/* mise en forme footer */
+
+#contact {
+	border: 1px black solid;
+	border-radius: 15px;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+
+.wordcontact {
+	color: #f59a9a;
+}
+
+.instagram {
+	color: #f59a9a;
+}
+
+footer {
+	font-weight: bolder;
+	font-family: 'Dancing Script', cursive, arial, sans-serif;
+	color: white;
+	background-color: #ffcccc;
+	text-align: center;
+	padding: 15px;
+}
+
+/* media query */
+@media all and (max-width : 1000px) {
+	.projet {
+		width: 100%;
+	}
+
+	.projet img {
+		width: 100%;
+		min-width: auto;
+		height: auto;
+	}
+}
